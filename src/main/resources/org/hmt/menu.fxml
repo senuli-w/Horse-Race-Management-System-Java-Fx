@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1310.0" style="-fx-background-color: #023047;" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hmt.controllers.MenuController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="130.0" prefWidth="1310.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label styleClass="main-topic" text="Rapid Run Horse Race Management System">
+               <font>
+                  <Font name="Candara" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="599.0" prefWidth="1250.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="289.0" fitWidth="436.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/welcome.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </ImageView>
+            <HBox alignment="CENTER" prefHeight="93.0" prefWidth="1210.0" spacing="40.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goToAddHorse" styleClass="transparent" text="Add Horse" />
+                  <Button mnemonicParsing="false" onAction="#goToDeleteHorse" styleClass="transparent" text="Delete Horse" />
+                  <Button mnemonicParsing="false" onAction="#goToUpdateHorse" styleClass="transparent" text="Update Horse" />
+                  <Button mnemonicParsing="false" onAction="#goToViewHorses" styleClass="transparent" text="View Horses" />
+                  <Button mnemonicParsing="false" onAction="#goToStartRace" styleClass="transparent" text="Start Race" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="94.0" prefWidth="1210.0" spacing="40.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goToSelectFinalRound" styleClass="transparent" text="Select for Final Round" />
+                  <Button mnemonicParsing="false" onAction="#goToWinningHorses" styleClass="transparent" text="Show Winning Horses" />
+                  <Button mnemonicParsing="false" onAction="#goToVisualizeHorses" styleClass="transparent" text="Visualize Winning Horses" />
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="30.0" left="30.0" right="30.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="95.0" prefWidth="1210.0" spacing="40.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Button mnemonicParsing="false" onAction="#exit" styleClass="transparent" text="Exit" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

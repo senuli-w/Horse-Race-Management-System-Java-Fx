@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1310.0" stylesheets="@../../styles/styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hmt.controllers.UpdateHorseSearchController">
+   <top>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="background-color-1"
+            BorderPane.alignment="CENTER">
+         <Label styleClass="page-topic" text="Update Horse"/>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="72.0" prefWidth="200.0" styleClass="background-color-3" BorderPane.alignment="CENTER">
+         <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="130.0">
+            <HBox.margin>
+               <Insets left="10.0"/>
+            </HBox.margin>
+            <Label prefHeight="100.0" prefWidth="126.0" text="Group A :">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+               <padding>
+                  <Insets left="10.0"/>
+               </padding>
+            </Label>
+            <Label fx:id="groupACount" prefHeight="100.0" prefWidth="80.0" text="0">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0"/>
+               </padding>
+            </Label>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="130.0">
+            <HBox.margin>
+               <Insets left="10.0"/>
+            </HBox.margin>
+            <Label prefHeight="100.0" prefWidth="126.0" text="Group B :">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+               <padding>
+                  <Insets left="10.0"/>
+               </padding>
+            </Label>
+            <Label fx:id="groupBCount" prefHeight="100.0" prefWidth="80.0" text="0">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0"/>
+               </padding>
+            </Label>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="130.0">
+            <HBox.margin>
+               <Insets left="10.0"/>
+            </HBox.margin>
+            <Label prefHeight="100.0" prefWidth="126.0" text="Group C :">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+               <padding>
+                  <Insets left="10.0"/>
+               </padding>
+            </Label>
+            <Label fx:id="groupCCount" prefHeight="100.0" prefWidth="80.0" text="0">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0"/>
+               </padding>
+            </Label>
+         </HBox>
+         <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="130.0">
+            <HBox.margin>
+               <Insets left="10.0"/>
+            </HBox.margin>
+            <Label prefHeight="100.0" prefWidth="126.0" text="Group D :">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+               <padding>
+                  <Insets left="10.0"/>
+               </padding>
+            </Label>
+            <Label fx:id="groupDCount" prefHeight="100.0" prefWidth="80.0" text="0">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0"/>
+               </padding>
+            </Label>
+         </HBox>
+         <Pane prefHeight="72.0" prefWidth="211.0" HBox.hgrow="ALWAYS"/>
+         <HBox alignment="CENTER" prefHeight="40.0" prefWidth="220.0">
+            <Label prefHeight="100.0" text="Total Horse Count :">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0"/>
+               </padding>
+            </Label>
+            <Label fx:id="totalCount" prefHeight="100.0" text="0">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0"/>
+               </padding>
+            </Label>
+         </HBox>
+         <HBox alignment="CENTER" prefHeight="72.0" prefWidth="259.0" spacing="20.0" styleClass="background-color-1">
+            <Button mnemonicParsing="false" onAction="#goToMenu" prefHeight="40.0" styleClass="transparent"
+                    text="Menu"/>
+            <Button mnemonicParsing="false" onAction="#exit" prefHeight="40.0" styleClass="transparent" text="Exit"/>
+         </HBox>
+      </HBox>
+   </bottom>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="50.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+         </padding>
+         <VBox alignment="CENTER" prefHeight="206.0" prefWidth="643.0">
+            <padding>
+               <Insets bottom="20.0" left="60.0" right="60.0" top="20.0"/>
+            </padding>
+            <VBox.margin>
+               <Insets top="20.0"/>
+            </VBox.margin>
+            <Label text="Search Horse from ID">
+               <font>
+                  <Font size="16.0"/>
+               </font>
+            </Label>
+            <TextField fx:id="searchField" maxWidth="300.0" prefHeight="38.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="70.0" right="70.0" top="20.0"/>
+               </VBox.margin>
+               <font>
+                  <Font size="14.0"/>
+               </font>
+            </TextField>
+            <Label fx:id="searchErrorMsg" styleClass="error-msg">
+               <VBox.margin>
+                  <Insets bottom="10.0"/>
+               </VBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#searchHorse" styleClass="normal-btn" text="Search"/>
+         </VBox>
+         <HBox fx:id="horseCard" prefHeight="100.0" prefWidth="200.0" style="-fx-background-radius: 15;"
+               styleClass="background-color-3">
+            <VBox.margin>
+               <Insets left="350.0" right="350.0"/>
+            </VBox.margin>
+            <ImageView fx:id="horseImageView" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true"
+                       preserveRatio="true">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+               </HBox.margin>
+            </ImageView>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="15.0" top="10.0"/>
+               </padding>
+               <HBox.margin>
+                  <Insets/>
+               </HBox.margin>
+               <HBox prefHeight="38.0" prefWidth="378.0">
+                  <Label fx:id="horseNameLabel" prefHeight="38.0" prefWidth="252.0" text="Name: Speedy Runner"
+                         HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0"/>
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                     </padding>
+                  </Label>
+                  <Label fx:id="horseAgeLabel" alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="69.0"
+                         text="Age : 4" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0"/>
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                     </padding>
+                  </Label>
+                  <Label fx:id="horseIdLabel" alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="71.0"
+                         text="ID : 4" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0"/>
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                     </padding>
+                  </Label>
+               </HBox>
+               <HBox prefHeight="38.0" prefWidth="378.0">
+                  <Label fx:id="horseBreedLabel" prefHeight="38.0" prefWidth="224.0" text="Breed: Thoroughbred"
+                         HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0"/>
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                     </padding>
+                  </Label>
+                  <Label fx:id="horseJockeyLabel" alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="173.0"
+                         text="Jockey: Jane Smith" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0"/>
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                     </padding>
+                  </Label>
+               </HBox>
+               <HBox prefHeight="38.0" prefWidth="378.0">
+                  <Label fx:id="horseRaceRecordLabel" prefHeight="38.0" prefWidth="243.0"
+                         text="Race Record: 5 wins in 9 races" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0"/>
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                     </padding>
+                  </Label>
+                  <Label fx:id="horseGroupLabel" alignment="CENTER_RIGHT" prefHeight="38.0" prefWidth="140.0"
+                         text="Group : A" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="14.0"/>
+                     </font>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                     </padding>
+                  </Label>
+               </HBox>
+            </VBox>
+         </HBox>
+         <Button fx:id="goToUpdateButton" mnemonicParsing="false" onAction="#goToUpdateSingleHorse"
+                 styleClass="normal-btn" text="Update Horse"/>
+      </VBox>
+   </center>
+</BorderPane>

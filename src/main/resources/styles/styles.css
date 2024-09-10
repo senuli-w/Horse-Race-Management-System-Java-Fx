@@ -1,0 +1,101 @@
+
+/*--color-1: #023047;*/
+/*--color-2: #219EBC;*/
+/*--color-3: #8ECAE6;*/
+/*--color-4: #FFB703;*/
+/*--color-5: #FB8500;*/
+
+
+.main-topic{
+    -fx-text-fill: #219EBC;
+}
+
+.main-btn{
+    -fx-background-color: #023047;
+    -fx-background-radius: 15;
+    -fx-text-fill: #8ECAE6;
+}
+
+.transparent{
+    -fx-padding: 0 30;
+    -fx-pref-height: 50;
+    -fx-border-color: #8ECAE6;
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill: #8ECAE6;
+    -fx-font-size: 18;
+}
+
+.transparent:hover{
+    -fx-underline: true;
+    -fx-text-fill: #023047;
+    -fx-background-color: #8ECAE6;
+}
+
+.other-topic{
+    -fx-text-fill: #8ECAE6;
+}
+
+.background-color-5{
+    -fx-background-color: #EEEEEE;
+}
+
+.background-color-1{
+    -fx-background-color: #023047;
+}
+
+.background-color-2{
+    -fx-background-color: #8ECAE6;
+}
+
+.background-color-3{
+    -fx-background-color: #219EBC;
+    -fx-text-fill: #023047;
+}
+
+.normal-btn{
+    -fx-background-color: #219EBC;
+    -fx-font-size: 14;
+    -fx-pref-height: 40;
+    -fx-padding: 0 18;
+}
+
+.normal-btn:hover{
+    -fx-background-color: #8ECAE6;
+}
+
+.input-text-field{
+    -fx-font-size: 14;
+}
+
+.error-msg{
+    -fx-text-fill: #ff3333;
+    -fx-font-size: 14;
+}
+
+.page-topic{
+    -fx-text-fill: #8ECAE6;
+    -fx-font-size: 26;
+    -fx-font-weight: 600;
+}
+
+.table-view{
+    -fx-background-color: rgba(33, 158, 188, 0.6);
+}
+
+.table-column{
+    -fx-background-color: rgba(33, 159, 188, 0.4);
+    -fx-padding: 8;
+    -fx-font-size: 13;
+}
+
+.table-row-cell{
+    -fx-text-fill: #023047;
+}
+
+.chart-bar{
+    -fx-bar-fill: #219EBC;
+}
+
+.chart{
+    -fx-border-color: #023047;
+}
